@@ -1,0 +1,264 @@
+
+{
+    "menu" :[
+        {
+            "url"  : "",
+            "name" : "Administración",
+            "icon" : "shield",
+            "can"  : "administracion",
+              "submenu" :[
+                  {
+
+                    "route" : "admin.control.permisos",
+                    "url"   : "admin/control-permisos",
+                    "name"  : "Lista de Roles",
+                    "can"   :"roles"
+                },
+                {
+
+                    "route" : "admin.usuario.index",
+                    "url"   : "admin/lista-usuarios",
+                    "name"  : "Lista de Usuarios",
+                    "can"   :"usuarios"
+                  }
+            ]
+        },
+        {
+            "url"  : "",
+            "name" : "Mantenimiento(s)",
+            "icon" : "grid",
+            "can"  : "mantenimientos",
+            "submenu":[
+
+                {
+
+                    "route" : "servicios.tipo.planes",
+                    "url"   : "servicios/tipo-planes",
+                    "name"  : "Lista de Tipo Planes",
+                    "can"   : "m-tipoplan"
+
+                },
+                {
+
+                    "route" : "servicios.planes",
+                    "url"   : "servicios/planes",
+                    "name"  : "Lista de Planes",
+                    "can"   : "m-plan"
+
+                },
+                {
+
+                    "route" : "servicios.tiposervicio",
+                    "url"   : "servicios/tipo-servicios",
+                    "name"  : "Lista de Tipo Servicios",
+                    "can"   : "m-tiposervicio"
+
+                },
+                {
+
+                    "route" : "servicios.servicio",
+                    "url"   : "servicios/servicios",
+                    "name"  : "Lista de Servicios",
+                    "can"   : "m-servicio"
+
+                },
+                {
+
+                    "route" : "servicios.subservicio.index",
+                    "url"   : "servicios/sub-servicios",
+                    "name"  : "Lista de Sub Servicios",
+                    "can"   : "m-subservicio"
+
+                },
+                {
+
+                    "route" : "tipocuenta.index",
+                    "url"   : "servicios/tipo-cuenta",
+                    "name"  : "Lista de Tipo Cuenta",
+                    "can"   : "m-tipocuenta"
+
+                },
+                {
+
+                    "route" : "plancontable.index",
+                    "url"   : "servicios/plan-contable",
+                    "name"  : "Lista de Plan Contable",
+                    "can"   : "m-plancontable"
+
+                },
+                {
+
+                    "route" : "impuestosri.index",
+                    "url"   : "servicios/impuesto-sri",
+                    "name"  : "Lista de Impuesto SRI",
+                    "can"   : "m-impuesto"
+                },
+                {
+
+                    "route" : "proyecciongasto.index",
+                    "url"   : "servicios/proyeccion-gastos-personales",
+                    "name"  : "Lista de Proyección Gastos",
+                    "can"   : "m-proyecciones"
+                }
+            ]
+
+        },
+
+        {
+            "url"  : "",
+            "name" : "Ingreso de Facturas",
+            "icon" : "grid",
+            "can"  : "usuarios",
+            "submenu" :[
+                {
+                    "route" : "admin.ingreso_facturas.sri.index",
+                    "url"   : "/admin/ingreso_facturas/sri/id/tipoplan",
+                    "name"  : "Comprobantes SRI",
+                    "can"   :"c-servicios"
+                },
+                {
+                    "route" : "admin.ingreso_facturas.ingreso_manual.index",
+                    "url"   : "/admin/ingreso_facturas/ingreso_manual/id/tipoplan",
+                    "name"  : "Ingreso Manual",
+                    "can"   :"c-servicios"
+                }
+
+            ]
+        },
+        {
+            "url"  : "",
+            "name" : "Servicios",
+            "icon" : "grid",
+            "can"  : "usuarios",
+            "submenu" :[
+                {
+                    "route" : "servicios.contabilidad.index",
+                    "url"   : "/servicios/contabilidad",
+                    "name"  : "Grafico Contable",
+                    "can"   :"usuarios"
+                }
+            ]
+        },
+        {
+
+            "url"  : "#",
+            "name" : "Planes",
+            "icon" : "list",
+            "can"  : "compra",
+            "submenu" :[
+
+                {
+
+                    "route" : "tienda.index",
+                    "url"   : "tienda/tienda-solution",
+                    "name"  : "Servicios",
+                    "can"   : "c-servicios"
+
+                },
+                 {
+
+                    "route" : "cliente.lista.index",
+                    "url"   : "tienda/lista-compra",
+                    "name"  : "Mis Servicios",
+                    "can"   : "c-misservicios"
+
+                },
+
+
+                {
+
+                    "route" : "admin.tienda.index",
+                    "url"   : "tienda/admin-planes",
+                    "name"  : "Administracion Planes",
+                    "can"   : "c-admtienda"
+
+                },
+                {
+
+                    "route" : "me.admin.tienda.index",
+                    "url"   : "tienda/mi-administracion-plan",
+                    "name"  : "Mi Administracion de Planes",
+                    "can"   : "c-miadmtienda"
+
+                }
+
+            ]
+        },
+        {
+
+            "url"  : "#",
+            "name" : "Reportes",
+            "icon" : "file-text",
+            "can"  : "reportes",
+            "submenu" :[
+                {
+
+                    "route" : "reportes.usuario",
+                    "url"   : "reportes/reporte-usuarios",
+                    "name"  : "Reporte Edades Usuarios",
+                    "can"   : "r-usuarios-edades"
+
+                },
+                {
+                   
+                    "route" : "reportes.usuario.ciudad",
+                    "url"   : "reportes/reporte-usuarios-ciudad",
+                    "name"  : "Reporte Ciudad Usuarios",
+                    "can"   : "r-usuarios-ciudad"
+
+                },
+                {
+
+                    "route" : "reportes.genero",
+                    "url"   : "reportes/reporte-generos",
+                    "name"  : "Reporte Generos Usuarios",
+                    "can"   : "r-usuarios-generos"
+
+                },
+                {
+
+                    "route" : "reportes.usuario.telefono",
+                    "url"   : "reportes/reporte-usuario-telefono",
+                    "name"  : "Reporte Teléfono Usuarios",
+                    "can"   : "r-usuarios-telefono"
+
+                },
+                {
+
+                    "route" : "reportes.usuario.email",
+                    "url"   : "reportes/reporte-usuario-email",
+                    "name"  : "Reporte Correo Electrónico Usuarios",
+                    "can"   : "r-usuarios-email"
+
+                }
+
+
+            ]
+        },
+        {
+            "url"  : "",
+            "name" : "Indicadores Financieros",
+            "icon" : "pie-chart",
+            "can"  : "indicadores",
+              "submenu" :[
+                  {
+
+                    "route" : "indicador.razon.corriente",
+                    "url"   : "indicadores/indicador-razon-corriente",
+                    "name"  : "Razón Corriente",
+                    "can"   :"ind-razoncorriente"
+
+                  }
+              ]
+
+        }
+
+    ]
+
+
+}
+
+
+
+
+

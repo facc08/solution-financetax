@@ -1,0 +1,250 @@
+
+{
+    "menu" :[
+        {
+            "url"  : "",
+            "name" : "Administración",
+            "icon" : "shield",
+            "can"  : "administracion",
+              "submenu" :[
+                  {
+
+                    "route" : "admin.control.permisos",
+                    "url"   : "admin/control-permisos",
+                    "name"  : "Lista de Roles",
+                    "can"   :"roles"
+                },
+                {
+
+                    "route" : "admin.usuario.index",
+                    "url"   : "admin/lista-usuarios",
+                    "name"  : "Lista de Usuarios",
+                    "can"   :"usuarios"
+                  }
+            ]
+        },
+        {
+            "url"  : "",
+            "name" : "Mantenimiento(s)",
+            "icon" : "grid",
+            "can"  : "mantenimientos",
+            "submenu":[
+
+                {
+
+                    "route" : "servicios.tipo.planes",
+                    "url"   : "servicios/tipo-planes",
+                    "name"  : "Lista de Tipo Planes",
+                    "can"   : "m-tipoplan"
+
+                },
+                {
+
+                    "route" : "servicios.planes",
+                    "url"   : "servicios/planes",
+                    "name"  : "Lista de Planes",
+                    "can"   : "m-plan"
+
+                },
+                {
+
+                    "route" : "servicios.tiposervicio",
+                    "url"   : "servicios/tipo-servicios",
+                    "name"  : "Lista de Tipo Servicios",
+                    "can"   : "m-tiposervicio"
+
+                },
+                {
+
+                    "route" : "servicios.servicio",
+                    "url"   : "servicios/servicios",
+                    "name"  : "Lista de Servicios",
+                    "can"   : "m-servicio"
+
+                },
+                {
+
+                    "route" : "servicios.subservicio.index",
+                    "url"   : "servicios/sub-servicios",
+                    "name"  : "Lista de Sub Servicios",
+                    "can"   : "m-subservicio"
+
+                },
+                {
+
+                    "route" : "tipocuenta.index",
+                    "url"   : "servicios/tipo-cuenta",
+                    "name"  : "Lista de Tipo Cuenta",
+                    "can"   : "m-tipocuenta"
+
+                },
+                {
+
+                    "route" : "plancontable.index",
+                    "url"   : "servicios/plan-contable",
+                    "name"  : "Lista de Plan Contable",
+                    "can"   : "m-plancontable"
+
+                },
+                {
+
+                    "route" : "proyecciongasto.index",
+                    "url"   : "servicios/proyeccion-gastos-personales",
+                    "name"  : "Lista de Proyección Gastos",
+                    "can"   : "m-proyecciones"
+                },
+                {
+
+                    "route" : "servicios.planes.accionesPlan",
+                    "url"   : "servicios/acciones-plan",
+                    "name"  : "Lista de Acciones por Plan",
+                    "can"   : "m-plan"
+                },
+                {
+                    "route" : "reportes.formulas",
+                    "url"   : "reportes/formulas",
+                    "name"  : "Lista Formulas",
+                    "can"   : "m-formulas"
+                }
+            ]
+
+        },
+        {
+
+            "url"  : "#",
+            "name" : "Servicios",
+            "icon" : "list",
+            "can"  : "compra",
+            "submenu" :[
+
+                {
+                    "url"   : "#",
+                    "name"  : "Lista de Planes",
+                    "icon" : "menu",
+                    "can"   : "c-servicios",
+                    "submenunieto" :[
+                    ]
+
+                },
+                {
+
+                    "route" : "cliente.lista.index",
+                    "url"   : "tienda/lista-compra",
+                    "name"  : "Mis Planes Contratados",
+                    "can"   : "c-misservicios"
+
+                },
+
+
+                {
+
+                    "route" : "admin.tienda.index",
+                    "url"   : "tienda/admin-planes",
+                    "name"  : "Bandeja de Entrada Planes",
+                    "can"   : "c-admtienda"
+
+                },
+                {
+
+                    "route" : "me.admin.tienda.index",
+                    "url"   : "tienda/mi-administracion-plan",
+                    "name"  : "Mi Administración de Planes",
+                    "can"   : "c-miadmtienda"
+
+                }
+
+            ]
+        },
+        {
+
+            "url"  : "#",
+            "name" : "Reportes",
+            "icon" : "file-text",
+            "can"  : "reportes",
+            "submenu" :[
+                {
+
+                    "route" : "reportes.usuario",
+                    "url"   : "reportes/reporte-usuarios",
+                    "name"  : "Reporte Edades Usuarios",
+                    "can"   : "r-usuarios-edades"
+
+                },
+                {
+                   
+                    "route" : "reportes.usuario.ciudad",
+                    "url"   : "reportes/reporte-usuarios-ciudad",
+                    "name"  : "Reporte Ciudad Usuarios",
+                    "can"   : "r-usuarios-ciudad"
+
+                },
+                {
+
+                    "route" : "reportes.genero",
+                    "url"   : "reportes/reporte-generos",
+                    "name"  : "Reporte Generos Usuarios",
+                    "can"   : "r-usuarios-generos"
+
+                },
+                {
+
+                    "route" : "reportes.usuario.telefono",
+                    "url"   : "reportes/reporte-usuario-telefono",
+                    "name"  : "Reporte Teléfono Usuarios",
+                    "can"   : "r-usuarios-telefono"
+
+                },
+                {
+
+                    "route" : "reportes.usuario.email",
+                    "url"   : "reportes/reporte-usuario-email",
+                    "name"  : "Reporte Correo Electrónico Usuarios",
+                    "can"   : "r-usuarios-email"
+
+                },
+                {
+
+                    "route" : "reportes.formulario104",
+                    "url"   : "reportes/formulario104",
+                    "name"  : "Formulario 103",
+                    "can"   : "r-formulario104"
+
+                },
+                {
+
+                    "route" : "reportes.formulario4",
+                    "url"   : "reportes/formulario4",
+                    "name"  : "Formulario 104",
+                    "can"   : "r-formulario4"
+
+                },
+                {
+
+                    "route" : "reportes.indicadores",
+                    "url"   : "reportes/indicadores",
+                    "name"  : "Indicadores",
+                    "can"   : "r-indicadores"
+
+                },
+                {
+
+                    "route" : "reportes.ratios",
+                    "url"   : "reportes/ratios",
+                    "name"  : "Ratios",
+                    "can"   : "r-ratios"
+
+                }
+
+
+            ]
+        }
+
+    ]
+
+
+}
+
+
+
+
+

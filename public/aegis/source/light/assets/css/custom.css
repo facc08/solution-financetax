@@ -1,0 +1,119 @@
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY3VzdG9tLmNzcyIsInNvdXJjZXMiOlsiY3VzdG9tLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiJ9 */
+
+/*# sourceMappingURL=custom.css.map */
+.hide-table-padding{
+    padding: 0 !important;
+}
+
+.accordion-toggle .expand-button:after
+{
+    position: absolute;
+    left:.75rem;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.customDropzone:hover
+{
+    background-color: #cce0ff !important;
+}
+
+.btn-inicio:hover{
+    opacity: 75%;
+    cursor: pointer;
+}
+
+.article-bottom{
+    position: absolute;
+    bottom: 1rem;
+}
+
+#jumbotron-home{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/jumbo.png) fixed center center;
+    background-size: cover;
+    color: white;
+}
+
+.progress-bar {
+    border-radius: 0.4rem;
+    transition: width 2s ease;
+  }
+
+.font-15{
+    font-size: 15px !important;
+}
+
+.article-image{
+    width: -webkit-fill-available !important;
+  }
+
+.amarillo-banco{
+    background-color: #fff9ce;
+}
+
+.rosa-banco{
+    background-color: #ffdaf1;
+}
+
+.medium-font-size{
+    font-size: medium;
+}
+
+.pointer {cursor: pointer;}
+
+.card-box {
+    position: relative;
+    color: #fff;
+    padding: 20px 10px 40px;
+    margin: 20px 0px;
+}
+.card-box:hover {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+.card-box:hover .icon i {
+    font-size: 100px;
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+.card-box .inner {
+    padding: 5px 10px 0 10px;
+}
+.card-box h3 {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    white-space: nowrap;
+    padding: 0;
+    text-align: left;
+}
+.card-box p {
+    font-size: 22px;
+}
+.card-box .icon {
+    position: absolute;
+    top: auto;
+    bottom: 5px;
+    right: 5px;
+    z-index: 0;
+    font-size: 72px;
+    color: rgba(0, 0, 0, 0.15);
+}
+.card-box .card-box-footer {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+    padding: 3px 0;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-decoration: none;
+}
+.card-box:hover .card-box-footer {
+    background: rgba(0, 0, 0, 0.3);
+}
+.article.article-style-b .article-details .article-title a{
+    font-size: 20px;
+}
